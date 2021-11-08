@@ -5,3 +5,47 @@
     margin:0;
     padding: 0;
 }
+body{
+    background-color: rgb(36, 48, 35);
+    color: rgb(236, 228, 228);
+}
+
+header{
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    padding: 1.25rem 0;
+    background-color: rgb(17, 27, 16);
+    img{
+        width: 3.125rem;
+        margin-right: 1.25rem;
+    }
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}    
+    .cards{
+        padding: 1.875rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        .card{
+            width: calc((100%/5) - 2.5rem);
+            background-color: rgb(74, 88, 69);
+            text-align: center;
+            margin: .625rem;
+            .card-img{
+                width: 100%;
+                padding: .625rem;
+                height: 15.625rem;
+                overflow: hidden;
+            }
+            & img{
+                    width: 100%;
+                    object-fit: cover;
+                   
+            }
+        }
+    }
